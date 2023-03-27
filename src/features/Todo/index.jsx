@@ -32,7 +32,7 @@ function TodoFeature(props) {
         //clone current array to new array
         const newTodoList = [...todoList];
 
-        //console.log(todo, idx);
+        console.log(todo, idx);
         //toggle state
         newTodoList[idx] = {
             ...newTodoList[idx],
@@ -65,11 +65,11 @@ function TodoFeature(props) {
             <h3>Todo List</h3>
             <TodoList todoList={renderedTodoList} onTodoClick={handleTodoClick}></TodoList>
 
-            <div>
+            
                 <button onCLick={handleShowAllClick}>ShowAllClick</button>
                 <button onClick={handleShowCompletedClick}>ShowCompletedClick</button>
                 <button onCLick={handleShowNewClick}>ShowNewClick</button>
-            </div>
+            
         </div>
     );
 }
