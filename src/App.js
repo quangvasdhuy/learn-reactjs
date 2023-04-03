@@ -5,6 +5,7 @@ import DetailPage from './features/Todo/pages/DetailPage';
 import NotFound from './components/NotFound/index';
 import { useEffect } from 'react';
 import productApi from './api/categoryApi';
+import CounterFeature from './features/Counter';
 
 
 function App() {
@@ -34,13 +35,13 @@ function App() {
       <Route path="/albums" component={AlbumFeature}></Route> */}
 
       <Switch>
-        <Route path="/" component={TodoFeature} exact></Route>
+        <Route path="/" component={CounterFeature} exact></Route>
         <Route path="/todos" component={TodoFeature} exact></Route>
         <Route path="/albums" component={AlbumFeature} exact></Route>
 
         <Route component={NotFound}></Route>
       </Switch>
-      Footer
+      
     </div>
   );
 }
