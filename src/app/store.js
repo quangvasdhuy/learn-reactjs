@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 
 const rootReducer = {
-    count: counterReducer,
+    counter: counterReducer,
 }
 
 const store = configureStore({
