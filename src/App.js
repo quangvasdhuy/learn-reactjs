@@ -6,6 +6,7 @@ import NotFound from './components/NotFound/index';
 import { useEffect } from 'react';
 import productApi from './api/categoryApi';
 import CounterFeature from './features/Counter';
+import Header from './components/Header/index';
 
 
 function App() {
@@ -23,13 +24,12 @@ function App() {
   }, []);
   return (
     <div className="App">
-      Header
+      <Header></Header>
 
       {/* <p><Link to="/todos">TODO</Link></p>
       <p><Link to="/albums">ALBUM</Link></p> */}
 
-      <p><NavLink to="/todos" activeClassName="active-name">TODO</NavLink></p>
-      <p><NavLink to="/albums">ALBUM</NavLink></p>
+      
 
       {/* <Route path="/todos" component={TodoFeature}></Route>
       <Route path="/albums" component={AlbumFeature}></Route> */}

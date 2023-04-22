@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import InputField from '../../../../components/form-controls/InputField';
+// import InputField from '../../../../components/form-controls/InputField';
 import { useForm } from 'react-hook-form';
+import InputField from 'components/form-controls/InputField';
 
 TodoForm.propTypes = {
     onsubmit: PropTypes.func,
